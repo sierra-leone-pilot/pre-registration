@@ -2,26 +2,29 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?branch=master&project=mosip_pre-registration&metric=alert_status)](https://sonarcloud.io/dashboard?branch=master&id=mosip_pre-registration)
 
 # Pre-registration 
-This repository contains the source code and design documents for MOSIP Pre-registration server.  For an overview refer [here](https://docs.mosip.io/1.2.0/modules/pre-registration).  The modules exposes API endpoints. For a reference front-end UI implementation refer to [Pre-registration UI github repo](https://github.com/mosip/pre-registration-ui/)
+
+## Overview
+* This repository contains the source code and design documents for MOSIP Pre-registration server. Please find [Overview](https://docs.mosip.io/1.2.0/modules/pre-registration).
+* The modules exposes API endpoints. For a reference front-end UI implementation refer to [Pre-registration UI github repo](https://github.com/mosip/pre-registration-ui/).
 
 Pre-registration module consists of the following services:
-1. Application
-2. Booking
-3. Batchjob
-4. Captcha
-5. Datasync
+1. Application.
+1. Booking.
+1. Batchjob.
+1. Captcha.
+1. Datasync.
 
 ## Database
-See [DB guide](db_scripts/README.md)
+See [DB guide](db_scripts/README.md).
 
 ## Config-Server
-To run Pre-registration services, run [Config Server](https://docs.mosip.io/1.2.0/modules/module-configuration#config-server)
+To run Pre-registration services, run [Config Server](https://docs.mosip.io/1.2.0/modules/module-configuration#config-server).
 
 ## Build & run (for developers)
 Prerequisites:
 
-1. [Config Server](https://docs.mosip.io/1.2.0/modules/module-configuration#config-server)
-1. JDK 1.11  
+1. [Config Server](https://docs.mosip.io/1.2.0/modules/module-configuration#config-server).
+1. JDK 1.11.
 1. Build and install:
     ```
     $ cd kernel
