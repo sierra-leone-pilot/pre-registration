@@ -9,7 +9,7 @@ jobs:
     env:
       NAMESPACE: ${{ secrets.dev_namespace_docker_hub }}
       SERVICE_NAME: pre-registration-application-service
-      SERVICE_LOCATION: pre-registration-application-service
+      SERVICE_LOCATION: pre-registration/pre-registration-application-service
 
     steps:
       - uses: actions/checkout@v2
@@ -48,7 +48,7 @@ jobs:
 
       - name: Build with Maven
         run: |
-          cd pre-registration/pre-registration-application-service
+          cd ./pre-registration/pre-registration-application-service
           mvn clean install -U -s $GITHUB_WORKSPACE/settings.xml -DskipTests -Dgpg.skip=true --file pom.xml
 
       - name: Removing target jars
