@@ -627,7 +627,13 @@ public class DataSyncServiceUtil {
 				} else if (documentMultipartResponseDTO.getDocCatCode().equals(RequestCodes.POD.getCode())
 						|| documentMultipartResponseDTO.getDocCatCode().equals(RequestCodes.POB.getCode())) {
 					jsonObject.put(podUrl, prepareDocumentMetaData(documentMultipartResponseDTO));
+				} else { // FOR TESTING TO BE REMOVED
+					jsonObject.put(popUrl, prepareDocumentMetaData(documentMultipartResponseDTO));
+					log.info("popurl" + popUrl);
 				}
+				// FOR TESTING TO BE REMOVED
+				log.info("document metadata" + prepareDocumentMetaData(documentMultipartResponseDTO));
+
 				DocumentDTO documentDTO = getDocBytesDetails(documentMultipartResponseDTO.getDocumentId(), preId);
 				if (documentDTO != null && documentDTO.getDocument() != null) {
 					inputFile.put(documentMultipartResponseDTO.getDocCatCode().concat("_")
