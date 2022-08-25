@@ -587,6 +587,7 @@ public class DataSyncServiceUtil {
 			log.info("sessionId", "idType", "id",
 					"In archivingFiles method of datasync service util, Json file content - "
 							+ new JSONObject(finalMap).toJSONString());
+			log.info("TEST: New changes to build are being reflected");
 			String encryptionPublickey = getEncryptionKey(machineId);
 			inputFile.put("ID.json", mapper.writeValueAsBytes(finalMap));
 			preRegArchiveDTO.setZipBytes(encryptFile(getCompressed(inputFile), encryptionPublickey));
