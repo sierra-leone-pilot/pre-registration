@@ -642,6 +642,7 @@ public class DataSyncServiceUtil {
 					inputFile.put(documentMultipartResponseDTO.getDocCatCode().concat("_")
 							.concat(documentMultipartResponseDTO.getDocName()), documentDTO.getDocument());
 				}
+
 				log.info("documentDTO" + documentDTO);
 			}
 		}
