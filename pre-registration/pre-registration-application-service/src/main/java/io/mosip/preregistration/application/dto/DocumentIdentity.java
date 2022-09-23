@@ -4,7 +4,7 @@ import io.mosip.preregistration.core.common.dto.identity.IdentityJsonValues;
 import lombok.Data;
 
 @Data
-public class DocumentIdentity {
+public class  {
 	
 	/** Proof of Address. */
 	private IdentityJsonValues poa;
